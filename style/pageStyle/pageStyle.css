@@ -1,0 +1,137 @@
+.hero__section {
+  background: url("../../img/Mountain Image.png");
+  width: 100%;
+  height: 1978px;
+  z-index: 3;
+  margin-top: -111px;
+}
+.hero__section .Huge__Title {
+  color: var(--neutral-white, #FFF);
+  position: fixed;
+  top: 31.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+  padding-top: 80px;
+}
+.hero__section .Huge__Title h2 {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  color: var(--neutral-white, #FFF);
+  /* Sub Heading/SH - 56 */
+  font-family: Cabinet Grotesk;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 114.286% */
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+.hero__section .Huge__Title h1 {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-family: Cabinet Grotesk;
+  font-size: 156px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 156px */
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+}
+.hero__section .Play {
+  position: absolute;
+  top: 453px;
+  left: 46.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hero__section .Play button {
+  background-image: url("../../img//icon/Play Button.jpg");
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+}
+.hero__section .info__panel {
+  position: relative;
+}
+.hero__section .See__video {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.hero__section .Photo {
+  background-image: url("../../img/seeVideo.jpg");
+  width: 304px;
+  height: 320px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__section .Photo p {
+  color: var(--neutral-white, #FFF);
+  text-align: center;
+  /* Body/B - 18 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-top: 70%;
+}
+.hero__section .Photo h2 {
+  white-space: nowrap;
+  gap: 16px;
+  padding-left: 32px;
+  padding-top: 32px;
+  color: var(--neutral-white, #FFF);
+  text-align: center;
+  font-family: Cabinet Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.hero__section .descript__box {
+  width: 507px;
+}
+.hero__section .descript__box h2 {
+  color: var(--neutral-white, #FFF);
+  /* Sub Heading/SH - 56 */
+  font-family: "Cabinet Grotesk";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 114.286% */
+}
+.hero__section .descript__box h3 {
+  align-self: stretch;
+  color: var(--primary-cyan, #16F1FF);
+  /* Sub Heading/SH - 32 */
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero__section .descript__box p {
+  color: var(--neutral-white, #FFF);
+  /* Body/B - 18 */
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  opacity: 0.8;
+}/*# sourceMappingURL=pageStyle.css.map */
