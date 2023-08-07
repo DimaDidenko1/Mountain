@@ -3,7 +3,7 @@
   width: 100%;
   height: 1978px;
   z-index: 3;
-  margin-top: -111px;
+  margin-top: -114px;
 }
 .hero__section .Huge__Title {
   color: var(--neutral-white, #FFF);
@@ -63,6 +63,20 @@
 }
 .hero__section .info__panel {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  padding: 699px 0px 0px 164px;
+}
+.hero__section .info__panel::before {
+  content: "";
+  position: absolute;
+  height: 834px;
+  width: 1.5px;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0px;
+  left: 95px;
 }
 .hero__section .See__video {
   display: flex;
@@ -104,16 +118,16 @@
   align-items: center;
 }
 .hero__section .descript__box {
+  padding-top: 46px;
   width: 507px;
 }
 .hero__section .descript__box h2 {
   color: var(--neutral-white, #FFF);
-  /* Sub Heading/SH - 56 */
   font-family: "Cabinet Grotesk";
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 114.286% */
+  line-height: 200.286%;
 }
 .hero__section .descript__box h3 {
   align-self: stretch;
@@ -126,6 +140,7 @@
   line-height: normal;
 }
 .hero__section .descript__box p {
+  padding-top: 24px;
   color: var(--neutral-white, #FFF);
   /* Body/B - 18 */
   font-family: "Poppins";
@@ -134,4 +149,55 @@
   font-weight: 400;
   line-height: 32px;
   opacity: 0.8;
+}
+.hero__section .Our__blog {
+  border-radius: 15px;
+}
+.hero__section .Our__blog .Our__descript {
+  width: 528px;
+  height: 91px;
+  background: var(--effect-opacity-background, rgba(0, 0, 0, 0.2));
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+.hero__section .Our__blog .Our__descript h2 {
+  padding-top: 32px;
+  padding-left: 32px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  font-family: Cabinet Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--neutral-white, #FFF);
+  text-align: center;
+  align-items: center;
+}
+.hero__section .Our__blog .Photo__our {
+  width: 528px;
+  height: 152px;
+  background-image: url("../../img/our.jpg");
+}
+
+.mouse {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 90.9%;
+  left: 18px;
+  gap: 14px;
+  transform: rotate(-90deg);
+}
+.mouse p {
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mouse img {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=pageStyle.css.map */

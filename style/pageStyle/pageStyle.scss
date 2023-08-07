@@ -4,7 +4,9 @@
     width: 100%;
     height: 1978px;
     z-index: 3;
-    margin-top: -111px;
+    margin-top: -114px;
+   
+   
     .Huge__Title{
         color: var(--neutral-white, #FFF);
         position: fixed;
@@ -64,6 +66,20 @@
     }     
 .info__panel {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 699px 0px 0px 164px;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 834px;
+        width: 1.5px;
+        background: rgba(255, 255, 255, 0.50);
+        top: 0px;
+        left: 95px;
+    }
  }
 .See__video {
     display: flex;
@@ -107,17 +123,18 @@
 
  }
 .descript__box {
+    padding-top: 46px;
     width: 507px;
     h2{
         color: var(--neutral-white, #FFF);
-        /* Sub Heading/SH - 56 */
         font-family: 'Cabinet Grotesk';
         font-size: 56px;
         font-style: normal;
         font-weight: 700;
-        line-height: 64px; /* 114.286% */
+        line-height: 200.286% 
     }
     h3{
+        
         align-self: stretch;
         color: var(--primary-cyan, #16F1FF);
         /* Sub Heading/SH - 32 */
@@ -128,7 +145,7 @@
         line-height: normal;
     }
     p{
-        
+       padding-top: 24px;
         color: var(--neutral-white, #FFF);
         /* Body/B - 18 */
         font-family: 'Poppins';
@@ -139,5 +156,56 @@
         opacity: 0.8;
     }
  }
-.Our__blog { }
+.Our__blog {
+    
+    border-radius: 15px;
+    .Our__descript{
+        h2{
+            padding-top: 32px;
+            padding-left: 32px;
+            gap: 16px;
+            display: flex;
+            flex-direction: row;
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: var(--neutral-white, #FFF);
+            text-align: center;
+            align-items: center;
+        }
+        width: 528px;
+        height: (243-152px);
+        background: var(--effect-opacity-background, rgba(0, 0, 0, 0.20));
+        backdrop-filter: blur(16px);
+        
+    }
+    .Photo__our{
+        width: 528px;
+        height: 152px;
+        background-image: url('../../img/our.jpg');
+    }
+ }
+}
+
+.mouse{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 90.9%;
+    left: 18px;
+    gap: 14px;
+    p{
+        color: var(--neutral-white, #FFF);
+        font-family: Cabinet Grotesk;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    img{
+        transform: rotate(90deg);
+    }
+    transform: rotate(-90deg);
 }
