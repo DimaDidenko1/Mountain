@@ -200,4 +200,247 @@
 }
 .mouse img {
   transform: rotate(90deg);
+}
+
+.Open__hours {
+  margin: 314px 0px 0px -36px;
+  display: flex;
+  justify-content: space-around;
+  gap: 157px;
+}
+
+.weather {
+  padding: 0px 0px 0px 39px;
+  width: 628px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.weather__title {
+  white-space: normal;
+}
+.weather__title h2 {
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+}
+
+.weather__descript {
+  align-items: center;
+  gap: 41px;
+  display: flex;
+}
+.weather__descript p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.weather__img {
+  display: flex;
+  margin-top: 7px;
+}
+.weather__img img {
+  width: 56px;
+  height: 56px;
+}
+.weather__img h3 {
+  padding-left: 7px;
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.opening {
+  border-radius: 12px 12px 0px 0px;
+  margin: -53px 0px 0px 0px;
+  background: var(--effect-opacity-background, rgba(0, 0, 0, 0.2));
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  width: 512px;
+}
+
+.blue__box {
+  padding: 24px 48px;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  align-self: stretch;
+  background: var(--neutral-dark-blue, #11327B);
+}
+.blue__box h3 {
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.Opening__card {
+  display: flex;
+  padding: 24px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+
+.open__time p {
+  padding: 1px 0px 14px 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.open__time h2 {
+  padding: 0px 83px 26px 0px;
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.See__all {
+  display: flex;
+  padding: 24px 48px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  padding-left: 0px;
+}
+.See__all a {
+  margin: 8px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--primary-cyan, #16F1FF);
+  text-align: center;
+  font-family: Cabinet Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Map {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -45px;
+  background: var(--neutral-black, #020E20);
+}
+
+.Forecast {
+  padding: 3px 0px 0px 0px;
+  width: 670px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.Long__time {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.Days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 170px;
+  height: 88px;
+  background-color: var(--primary-green, #2AEF84);
+}
+.Days h2 {
+  color: var(--neutral-black, #020E20);
+  font-family: Cabinet Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.title h2 {
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.weater__on3day {
+  display: flex;
+  gap: 80px;
+}
+
+.onday:nth-child(2) .imgWeater {
+  margin: 0px 0px 0px -28px;
+}
+.onday p {
+  padding-top: 24px;
+  color: var(--neutral-white, #FFF);
+  opacity: 0.8;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.imgWeater {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.imgWeater img {
+  width: 56px;
+  height: 56px;
+}
+.imgWeater h2 {
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.descript__bikePark {
+  width: 670px;
+  color: var(--neutral-white, #FFF);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  opacity: 0.8;
+}
+
+.Route__map {
+  margin: -97px 0px 0px -184px;
+  width: 779px;
+  height: 717px;
+  flex-shrink: 0;
+  background-image: url("../../img/Route Map.png");
+  background-size: cover;
 }/*# sourceMappingURL=pageStyle.css.map */
