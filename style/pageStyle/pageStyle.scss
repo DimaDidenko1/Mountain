@@ -1,10 +1,14 @@
 .hero__section{
     
-    background: url('../../img/Mountain\ Image.png');
+    background-image: url('../../img/Mountain\ Image.png');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 1978px;
-    z-index: 3;
-    margin-top: -114px;
+    @media (min-width: 1800px) {
+        height: 1978px;
+        z-index: 3;
+        margin-top: -114px;
+    }
    
    
     .Huge__Title{
@@ -15,6 +19,10 @@
         transform: translate(-50%, -50%);
         z-index: -99;
         padding-top: 80px;
+        @media (max-width:650px) {
+            left: 30%;
+           
+        }
         h2{
             white-space: nowrap;
             display: flex;
@@ -22,12 +30,23 @@
             color: var(--neutral-white, #FFF);
             /* Sub Heading/SH - 56 */
             font-family: Cabinet Grotesk;
+            
             font-size: 56px;
+            @media (max-width: 1800px) {
+                font-size: 56px;
+            }
+            @media (max-width: 992px) {
+                font-size: 26px;
+            }
             font-style: normal;
             font-weight: 700;
             line-height: 64px; /* 114.286% */
             mix-blend-mode: overlay;
             opacity: 0.5;
+        }
+        @media (max-width:800px) {
+        font-size: 16px;
+        
         }
         h1{
             white-space: nowrap;
@@ -35,12 +54,22 @@
             justify-content: center;
             font-family: Cabinet Grotesk;
             font-size: 156px;
+            @media (max-width: 1800px) {
+                font-size: 80px;
+            }
+            @media (max-width: 992px) {
+                font-size: 46px;
+            }
             font-style: normal;
             font-weight: 900;
             line-height: 100%; /* 156px */
             text-transform: uppercase;
             mix-blend-mode: overlay;
             opacity: 0.7;
+            @media (max-width:800px) {
+            font-size: 20px;
+            
+            }
         }
     }
     .Play{
@@ -55,14 +84,24 @@
         border-radius: 50%;
         border: solid 2px rgba(255, 255, 255, 0.40);;
         background-color: rgba(255, 255, 255, 0.20);;
-       
+        @media (max-width:800px) {
+        top: 700px;
+        }
         button{
             background-image: url('../../img//icon/Play\ Button.jpg');
             width: 72px;
             height: 72px;
             border-radius: 50%;
             border: none;
+        }
+        @media (max-width:1799px) {
+            
+            left: 45%;
         }  
+        @media (max-width:1200px) {
+            left: 42%;
+        }
+
     }     
 .info__panel {
     position: relative;
@@ -79,21 +118,56 @@
         background: rgba(255, 255, 255, 0.50);
         top: 0px;
         left: 95px;
+        @media (max-width:800px) {
+        display: none;
+        }
     }
+    @media (max-width:1600px) {
+        flex-direction: column;
+        gap: 100px;
+        
+    }
+    @media (max-width:800px) {
+     padding-left: 0px;  
+    }
+  
  }
 .See__video {
     display: flex;
     gap: 48px;
     align-items: center;
+    @media (max-width: 992px) {
+     flex-direction: column;           
+    }
+    @media (max-width:800px) {
+        padding-top: 200px;
+    }
+    
 }
 .Photo {
     background-image: url('../../img/seeVideo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 304px;
     height: 320px;  
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-   
+    @media (max-width:1200px) {
+        width: 204px;
+        height: 220px; 
+    }
+    @media (max-width: 992px) {
+        width: 500px;
+        height: 220px;    
+    }
+    @media (max-width:800px) {
+        
+        width: 300px;
+        height: 220px;
+        margin: 0 auto;
+        }
     p{
         color: var(--neutral-white, #FFF);
         text-align: center;
@@ -104,6 +178,9 @@
         font-weight: 400;
         line-height: 32px; /* 177.778% */
         margin-top: 70%;
+        @media (max-width:1200px) {
+            font-size: 16px;
+        }
     }
     h2{
         white-space: nowrap;
@@ -119,19 +196,33 @@
         line-height: normal;
         display: flex;
         align-items: center;
+        @media (max-width:1200px) {
+            font-size: 16px;
+        }
     }
 
  }
 .descript__box {
     padding-top: 46px;
     width: 507px;
+    @media (max-width:650px) {
+        
+        margin-left: 50px;
+    }
     h2{
         color: var(--neutral-white, #FFF);
         font-family: 'Cabinet Grotesk';
         font-size: 56px;
         font-style: normal;
         font-weight: 700;
-        line-height: 200.286% 
+        line-height: 200.286%;
+        @media (max-width:1200px) {
+            font-size: 36px;
+        }
+        @media (max-width:800px) {
+         font-size: 18px;
+         
+        }
     }
     h3{
         
@@ -143,6 +234,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width:1200px) {
+            font-size: 20px;
+        }
+        @media (max-width:800px) {
+         font-size: 16px;
+        }
     }
     p{
        padding-top: 24px;
@@ -154,6 +251,18 @@
         font-weight: 400;
         line-height: 32px;
         opacity: 0.8;
+        @media (max-width:1200px) {
+            font-size: 12px;
+        }
+        @media (max-width:800px) {
+            width: 300px;
+            font-size: 14px;
+            }
+
+    }
+    @media (max-width:800px) {
+        position: relative;
+     left: 10%;   
     }
  }
 .Our__blog {
@@ -179,13 +288,27 @@
         height: (243-152px);
         background: var(--effect-opacity-background, rgba(0, 0, 0, 0.20));
         backdrop-filter: blur(16px);
+        @media (max-width:800px) {
         
+            width: 300px;
+            
+            
+            }
     }
     .Photo__our{
         width: 528px;
         height: 152px;
         background-image: url('../../img/our.jpg');
+        background-size: cover;
+        background-position: center center;
+        @media (max-width:800px) {
+        
+            width: 300px;
+            
+            
+            }
     }
+    
  }
 }
 
@@ -208,14 +331,27 @@
         transform: rotate(90deg);
     }
     transform: rotate(-90deg);
+    @media (max-width:800px) {
+     display: none;   
+    }
 }
 
 
 .Open__hours {
+    
     margin: 314px 0px 0px -36px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 157px;
+    @media (max-width:1800px) {
+        gap: 50px;
+        padding-bottom: 300px;
+        
+    }
+    @media (max-width:1200px) {
+        flex-direction: column;
+    } 
+    
  }
 .weather {
     padding: 0px 0px 0px 39px;
@@ -223,6 +359,19 @@
     display: flex;
     flex-direction: column;
     gap: 23px;
+    @media (max-width:1200px) {
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    @media (max-width:992px) {
+        margin: 0 auto;
+        }
+        @media (max-width:800px) {
+        padding-right: 0px;
+        }
+        
+        
+        
  }
 .weather__title {
     white-space: normal;
@@ -233,7 +382,22 @@
         font-style: normal;
         font-weight: 700;
         line-height: 84px;
+        @media (max-width:992px) {
+            font-size: 32px;
+        }
+        @media (max-width:650px) {
+            font-size: 18px;
+            
+        }
     }
+    @media (max-width:992px) {
+        margin: 0 auto;
+        }
+        @media (max-width:650px) {
+            
+            margin-left: 20px;
+        }
+        
  }
 .weather__descript {
     align-items: center;
@@ -246,8 +410,19 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width:992px) {font-size: 16px;}
+        @media (max-width:650px) {
+            font-size: 12px;
+        }
+        
     }
-   
+    @media (max-width:992px) {
+        margin: 0 auto;
+        }
+        @media (max-width:650px) {
+            margin-left: 20px;
+            
+        }
  }
 .weather__img {
     display: flex;
@@ -265,6 +440,9 @@
         font-style: normal;
         font-weight: 700;
         line-height: 56px; 
+        @media (max-width:992px) {
+            font-size: 20px;
+        }
     }
  }
 .opening { 
@@ -274,6 +452,17 @@
     background: var(--effect-opacity-background, rgba(0, 0, 0, 0.20));
     backdrop-filter: blur(16px);
     width: 512px;
+    @media (max-width:1200px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    @media (max-width:992px) {
+        margin: 0 auto;
+        }
+        @media (max-width:800px) {
+        width: 200px;
+        }
 }
 .blue__box {
     padding: 24px 48px;
@@ -289,6 +478,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: 56px; 
+        @media (max-width:992px) {
+            font-size: 20px;
+        }
+        @media (max-width:800px) {
+            font-size: 14px;
+        }
     }
  }
 .Opening__card {
@@ -311,6 +506,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 28px;
+        @media (max-width:992px) {
+            font-size: 12px;
+        }
     }
     h2{
         padding: 0px 83px 26px 0px;
@@ -321,6 +519,12 @@
         font-weight: 700;
         line-height: 56px;
         border-bottom: solid 1px rgba(255, 255, 255, 0.10);
+        @media (max-width:992px) {font-size: 20px;}
+        @media (max-width:800px) {
+        font-size: 14px;
+        white-space: nowrap;
+        padding: 0;
+        }
     }
  }
 .See__all {
@@ -343,6 +547,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        @media (max-width:800px) {
+            font-size: 10px;
+            img{
+                width: 35px;
+            }
+        }
     }
  }
 
@@ -352,6 +562,16 @@
     justify-content: space-around;
     margin-top: -45px;
     background: var(--neutral-black, #020E20);
+    width: 100%;
+    @media (max-width: 1300px) {
+        
+    }
+    @media (max-width:1700px) {
+        
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    @media (max-width:992px) {margin-top: -10px;}
   }
 .Forecast { 
     padding: 3px 0px 0px 0px;
@@ -360,11 +580,23 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 64px;
+    @media (max-width:1700px) {
+        padding-bottom: 100px;
+        margin: 0 auto;
+    }
+    @media (max-width:800px) {
+        
+        width: 300px;
+       
+        }
 }
 .Long__time {
     display: flex;
     align-items: center;
     gap: 24px;
+    @media (max-width:992px) {
+        margin: 0 auto;
+        }
  }
 .Days {
     h2{
@@ -374,6 +606,9 @@
         font-style: normal;
         font-weight: 700;
         line-height: 56px;
+        @media (max-width:800px) {
+            font-size: 20px;
+        }
     }
     display: flex;
     justify-content: center;
@@ -381,6 +616,9 @@
     border-radius: 50%;
     width: 170px;
     height: 88px;
+    @media (max-width:800px) {
+        width: 100px;
+    }
     background-color: var(--primary-green, #2AEF84);
  }
 .title {
@@ -391,11 +629,18 @@
         font-style: normal;
         font-weight: 700;
         line-height: 56px; 
+        @media (max-width:800px) {
+        font-size: 26px;
+        }
     }
  }
 .weater__on3day {
     display: flex;
     gap: 80px;
+    @media (max-width:992px) {
+        margin: 0 auto;
+        gap: 20px;
+        }
     
  }
 .onday {
@@ -415,15 +660,28 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;  
+        @media (max-width:992px) {
+            font-size: 20px;
+        }
+        @media (max-width:800px) {
+        font-size: 12px;
+        }
     }
 }
 .imgWeater { 
     display: flex;
     justify-content: center;
     gap: 12px;
+    align-items: center;
     img{
         width: 56px;
         height: 56px;
+        @media (max-width:992px) {
+        }
+        @media (max-width:800px) {
+            width: 30px;
+            height: 30px;
+        }
     }
     h2{
         color: var(--neutral-white, #FFF);
@@ -432,6 +690,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: 64px;
+        @media (max-width:992px) {
+            font-size: 20px;
+        }
+        @media (max-width:800px) {
+            font-size: 16px;
+        }
     }
 }
 .descript__bikePark {
@@ -443,6 +707,14 @@
     font-weight: 400;
     line-height: 32px;
     opacity: 0.8;
+    @media (max-width:992px) {
+        font-size: 16px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    @media (max-width:800px) {
+        width: 200px;
+    }
  }
 .Route__map{
     margin: -97px 0px 0px -184px;
@@ -451,4 +723,19 @@
     flex-shrink: 0;
     background-image: url('../../img/Route\ Map.png');
     background-size: cover;
+    background-position: center center;
+    @media (max-width:1700px) {
+        
+        margin: 0 auto;
+    }
+    @media (max-width:992px) {
+        width: 450px;
+        height: 400px;
+        
+    }
+    @media (max-width:800px) {
+        width: 300px;
+        height: 300px;
+        
+    }
 }
