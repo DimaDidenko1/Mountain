@@ -2,6 +2,9 @@
 
 .swiper {
   width: 90%;
+  @media (max-width:1000px) {
+    max-width: 70%;
+  }
   padding-top: 50px;
   
   
@@ -56,11 +59,17 @@
     .Slide__Number{
         top: -5%;
         left: 1%;
-
+        @media (max-width:1000px) {
+            display: flex;
+            flex-direction: column;
+        }
         position: absolute;
         gap: 74px;
         h2{
             margin: -30px 0px 0px 0px;
+            @media (max-width:1000px) {
+                margin-top: 30px;
+            }
         }
     }
     height: 640px;
@@ -72,6 +81,10 @@
         position: relative;
         width: 356px;
         height: 356px;
+        @media (max-width:1000px) {
+            width: 150px;
+            height: 150px; 
+        }
         border-radius: 50%;
         background: url('../../img/logo.jpg') no-repeat;
         background-size: cover;
@@ -88,16 +101,24 @@
 
 .Swiper__box {
     margin-top: -10px;
+    padding-bottom: 205px;
     background: var(--neutral-black, #020E20);
     
  }
 .Swiper__control {
     // gap: 224px;
-   display: flex;
-   padding: 154px 0px 126px 69px;
+    display: flex;
+    padding: 154px 0px 126px 69px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
    .button__control{
     padding-top: 37px;
     gap: 56px;
+
+    @media (max-width: 1100px) {
+        gap: 10px;
+    }
 
    }
    .swiper-pagination{
@@ -113,6 +134,14 @@
 .Swiper__title {
     color: aliceblue;
     width: 953px;
+    @media (max-width: 1100px) {
+        width: 200px;
+    }
+    @media (max-width: 800px) {
+        width: 100px;
+        white-space: nowrap;
+    }
+
     margin-right: 224px;
     h2{
         color: var(--neutral-white, #FFF);
@@ -121,10 +150,17 @@
         font-style: normal;
         font-weight: 700;
         line-height: 84px;
+        @media (max-width: 1100px) {
+            font-size: 22px;
+            
+        }
     }
     h3{
         color: rgba(255, 255, 255, 0.60);
-        
+        @media (max-width: 1100px) {
+            font-size: 16px;
+            
+        }
         font-family: Inter;
         font-size: 32px;
         font-style: normal;
@@ -136,6 +172,10 @@
     max-width: 120px;
     position: relative;
     display: flex;
+    @media (max-width: 1100px) {
+        max-width: 60px;
+    }
+
     
  }
 .swiper {
@@ -148,15 +188,18 @@
 .swiper-slide { }
 .button-next {
     background: url('../../img/icon/arrow-right.png');
+    background-size: cover;
     width: 48px;
     height: 48px;
-
+   
 
  }
 .button-prev { 
     background: url('../../img/icon/arrow-left.png');
     width: 48px;
     height: 48px;
+    background-size: cover;
+   
 
 
 }
@@ -192,6 +235,9 @@
         color: var(--neutral-white, #FFF);
         font-family: Cabinet Grotesk;
         font-size: 72px;
+        @media (max-width:1000px) {
+            font-size: 32px;
+        }
         font-style: normal;
         font-weight: 700;
         line-height: 84px;
