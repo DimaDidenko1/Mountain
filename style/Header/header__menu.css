@@ -1,7 +1,6 @@
 .Header {
   display: flex;
   justify-content: center;
-  height: 112px;
   align-items: center;
   gap: 24px;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -9,6 +8,7 @@
 @media (min-width: 1800px) {
   .Header {
     padding: 32px 164px;
+    height: 112px;
   }
 }
 

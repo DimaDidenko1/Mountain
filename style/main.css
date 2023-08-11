@@ -78,4 +78,16 @@ body {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */

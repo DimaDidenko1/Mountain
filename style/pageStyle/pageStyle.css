@@ -22,7 +22,7 @@
 }
 @media (max-width: 650px) {
   .hero__section .Huge__Title {
-    left: 30%;
+    left: 50%;
   }
 }
 .hero__section .Huge__Title h2 {
@@ -379,7 +379,7 @@
   margin: 314px 0px 0px -36px;
   display: flex;
   justify-content: center;
-  gap: 157px;
+  gap: 490px;
 }
 @media (max-width: 1800px) {
   .Open__hours {
@@ -851,15 +851,49 @@
 
 .Road__map {
   display: flex;
-  margin-top: -5px;
+  padding-top: 245px;
+  padding-left: 30px;
   background: url("../../img/Bg__roadMAP.png") no-repeat;
   background-size: cover;
-  justify-content: center;
   width: 100%;
-  height: 854px;
+  min-height: 854px;
+  margin-top: -5px;
+}
+@media (max-width: 1919px) {
+  .Road__map {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 800px) {
+  .Road__map .road__about {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    margin: 0px;
+  }
+  .Road__map .road__about p {
+    width: 300px;
+  }
+}
+@media (max-width: 1600px) {
+  .Road__map {
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .Road__map .road__about h3 {
+    font-size: 16px;
+  }
+  .Road__map .road__about h2 {
+    font-size: 32px;
+  }
+  .Road__map .road__about p {
+    font-size: 14px;
+  }
 }
 
 .Road__card {
+  margin: 0px 0px 0px 274px;
   width: 313px;
   height: 346px;
   display: flex;
@@ -876,6 +910,7 @@
 }
 
 .Road__card__B {
+  margin: 78px 0px 0px 133px;
   display: inline-flex;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.15);
@@ -888,8 +923,10 @@
   gap: 16px;
 }
 .Road__card__B img {
-  width: 24px;
-  height: 24px;
+  display: flex;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
 }
 .Road__card__B h2 {
   width: 96px;
@@ -900,6 +937,9 @@
   font-weight: 500;
   line-height: 28px;
 }
+.Road__card__B .map__pin img {
+  margin-top: 34%;
+}
 
 .road__img {
   border-radius: 8px;
@@ -909,6 +949,12 @@
   flex-shrink: 0;
 }
 
+.today {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 7px 0px 29px 0px;
+}
 .today p {
   opacity: 0.8;
 }
@@ -943,10 +989,24 @@
 }
 
 .distance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 0px 0px;
   border-top: solid rgba(255, 255, 255, 0.2);
   border-bottom: solid rgba(255, 255, 255, 0.2);
 }
 
+.Height {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.road__about {
+  margin: -60px 0px 0px 173px;
+}
 .road__about h3 {
   color: rgba(255, 255, 255, 0.6);
   font-family: Cabinet Grotesk;
@@ -964,6 +1024,7 @@
   line-height: 84px;
 }
 .road__about p {
+  padding-top: 34px;
   width: 536px;
   color: var(--neutral-white, #FFF);
   font-family: Poppins;
@@ -992,4 +1053,120 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media (max-width: 1919px) {
+  .today {
+    margin: 0px;
+    padding: 0px;
+  }
+  .Road__card {
+    margin: 0px;
+  }
+  .Road__card__B {
+    margin: 0px;
+  }
+}
+.Tickrt__box {
+  margin-top: -1px;
+  background: var(--neutral-black, #020E20);
+  display: flex;
+  padding-top: 308px;
+}
+
+.ticket {
+  display: flex;
+  align-items: end;
+  background: var(--neutral-dark-green, #06516E);
+  background-size: cover;
+  max-width: 1585px;
+  width: 1585px;
+  height: 560px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.ticket__cont {
+  width: 100%;
+  border-radius: 12px;
+  background: url("../../img/Ticket.png") no-repeat;
+  background-size: cover;
+  min-height: 723px;
+  max-width: 1585px;
+  margin: 0 auto;
+}
+.ticket__cont h3 {
+  margin: 232px 0px 0px 110px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 378px;
+  width: 378px;
+}
+@media (max-width: 550px) {
+  .ticket__cont h3 {
+    font-size: 16px;
+  }
+}
+.ticket__cont h2 {
+  margin: 0px 0px 0px 109px;
+  color: var(--neutral-white, #FFF);
+  width: 378px;
+  font-family: Cabinet Grotesk;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+  width: 378px;
+}
+@media (max-width: 550px) {
+  .ticket__cont h2 {
+    font-size: 32px;
+  }
+}
+.ticket__cont p {
+  margin: 14px 0px 0px 109px;
+  color: var(--neutral-white, #FFF);
+  align-self: stretch;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  width: 378px;
+}
+@media (max-width: 550px) {
+  .ticket__cont p {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+.ticket__cont button {
+  margin: 47px 0px 0px 109px;
+  width: 183px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 8px 16px 8px 8px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  color: var(--neutral-white, #FFF);
+  font-family: Cabinet Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ticket__cont button img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=pageStyle.css.map */
