@@ -117,13 +117,24 @@
     left: 42%;
   }
 }
+@media (max-width: 968px) {
+  .hero__section .Play {
+    display: none;
+  }
+}
 .hero__section .info__panel {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 0px 0px 0px;
-  padding: 699px 0px 0px 164px;
+  padding: 600px 0px 0px 164px;
+}
+@media (max-width: 800px) {
+  .hero__section .info__panel {
+    margin: -100px 0px 0px 0px;
+    padding: 0px 0px 0px 164px;
+  }
 }
 .hero__section .info__panel::before {
   content: "";
@@ -162,7 +173,7 @@
 }
 @media (max-width: 800px) {
   .hero__section .See__video {
-    padding-top: 200px;
+    padding-top: 400px;
   }
 }
 .hero__section .Photo {
